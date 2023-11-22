@@ -5,7 +5,7 @@ const productRoutes = require("./routes/productRoutes");
 
 const app = express();
 app.use(bodyParser.json());
-app.use("/api/products", productRoutes);
+app.use("/products", productRoutes);
 
 //first we connect to the db, then we start the server
 connectDb()
